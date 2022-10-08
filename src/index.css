@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container-responsive {
+    @apply w-96 md:w-[48rem] lg:w-[58rem] xl:w-[72rem] 2xl:w-[86rem];
+  }
+  .content-responsive {
+    @apply w-52 md:w-[30rem] lg:w-[40rem] xl:w-[50rem] 2xl:w-[60rem];
+  }
+  .text-responsive {
+    @apply w-52 md:w-[25rem] lg:w-[35rem] xl:w-[50rem] 2xl:w-[60rem];
+  }
+  .visibility-content {
+    @apply hidden sm:hidden md:flex lg:flex xl:flex 2xl:flex;
+  }
+  .hidden-content {
+    @apply flex sm:flex md:hidden lg:hidden xl:hidden 2xl:hidden;
+  }
+}

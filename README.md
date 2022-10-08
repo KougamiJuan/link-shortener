@@ -1,4 +1,4 @@
-# Prettier - React - ESLint - Tailwind CSS - Vite | PRETV
+# Vite - React - Tailwind CSS (daisyUI) - ESLint (AirBnB rules) - Prettier
 
 Hi! This project is just to test how Vite works and how to integrate Prettier, ESLint (AirBnB rules) and Tailwind with ReactJS and its configurations to coexist in one place.
 
@@ -6,37 +6,42 @@ Please consider that this project is a test and not a serious production project
 
 # Introduction - Link Shortener
 
-With this free Link Shortener you can make Links shorter and easier to remember. With this in mind I decided to create a small project to test different features like linter rules, formatting rules, CSS frameworks, UI libraries and a bundle tool in order to test those technologies together and create a "copy and paste" guide for future serious projects.
+With link Shortener you can make links shorter and easier to remember. With this in mind I decided to create a small project to test different features like linter rules, formatting rules, CSS frameworks, UI libraries and a build tool in order to test those technologies together and create a "copy and paste" guide for future serious projects.
 
 ## Stack
 
-| Technology   | Version |
-| ------------ | ------- |
-| Vite         | 3.1.0   |
-| ReactJS      | 18.2.0  |
-| Tailwind CSS | 3.1.8   |
-| ESLint       | 8.23.0  |
-| Prettier     | 2.7.1   |
+| Technology                               | Version |
+| ---------------------------------------- | ------- |
+| [Vite](https://vitejs.dev/)              | 3.1.0   |
+| [ReactJS](https://reactjs.org/)          | 18.2.0  |
+| [Tailwind CSS](https://tailwindcss.com/) | 3.1.8   |
+| [daisyUI](https://daisyui.com/)          | 2.31.0  |
+| [ESLint](https://eslint.org/)            | 8.23.0  |
+| [Prettier](https://prettier.io/)         | 2.7.1   |
 
 ## Available scripts
 
-### starts a local web server:
+starts a local web server:
 
 `npm run dev`
 
-### builds the project (outputs to the folder `./dist`):
+builds the project (outputs to the folder `./dist`):
 
 `npm run build`
 
-### start a local web server that serves the built:
+start a local web server that serves the built:
 
 `npm run preview`
 
-## Steps to configure the project from scratch
+# Steps to configure the project from scratch
+
+## Vite
 
 Create the project with `Vite`:
 
 `npm create vite@latest my-app --template react`
+
+## ESLint (AirBnB rules) and code editor settings
 
 Install and setup the `ESLint` with `AirBnB rules`
 
@@ -52,8 +57,8 @@ Now, it is important to clarify that I have used VS Code as my main editor, so I
 {
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
-  "eslint.alwaysShowStatus": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.alwaysShowStatus": true,
   "prettier.singleQuote": true
 }
 ```
@@ -95,7 +100,9 @@ Next, it is time to edit our `.eslintrc.json` file. It is not necessary to have 
 }
 ```
 
-Finally, it is necessary to create a standard file for formatting our code. Run:
+## Prettier
+
+It is necessary to create a standard file for formatting our code. Run:
 
 `echo {}> .prettierrc.json`
 
@@ -112,9 +119,9 @@ and put the following configuration in that file
 }
 ```
 
-To setup Tailwind follow this guide: [Install Tailwind CSS with Vite (React)](https://tailwindcss.com/docs/guides/vite#react)
+## Tailwind (daisyUI)
 
-Or follow these steps:
+To setup Tailwind follow this guide [Install Tailwind CSS with Vite (React)](https://tailwindcss.com/docs/guides/vite#react) or follow the steps below:
 
 Install Tailwindcss, Postcss and Autoprefixer:
 
@@ -124,7 +131,7 @@ Run the init command to generate both `tailwind.config.cjs` and `postcss.config.
 
 `npx tailwindcss init -p`
 
-Add the paths to all of your template files in your `tailwind.config.cjs` file inside the `content` section and adds support for dark mode.
+Add the paths to all of your template files in your `tailwind.config.cjs` file inside the `content` section.
 
 ```javascript
 /** @type {import('tailwindcss').Config} */
@@ -175,4 +182,22 @@ module.exports = {
 };
 ```
 
-Use [CSS Theme Change](https://github.com/saadeghi/theme-change)
+## Optional configurations
+
+- To handle CSS themes use [CSS Theme Change](https://github.com/saadeghi/theme-change)
+
+- To transform SVGs into React components in Vite [vite-plugin-svgr](https://github.com/pd4d10/vite-plugin-svgr)
+
+# Documentation of each technology used
+
+- [Vite - Getting Started](https://vitejs.dev/guide/)
+
+- [React - Getting Started](https://reactjs.org/docs/getting-started.html)
+
+- [Tailwind - Get started with Tailwind CSS](https://tailwindcss.com/docs/installation)
+
+- [daisyUI - Install daisyUI as a Tailwind CSS plugin](https://daisyui.com/docs/install/)
+
+- [ESLint - Getting Started with ESLint](https://eslint.org/docs/latest/user-guide/getting-started)
+
+- [Prettier - Install](https://prettier.io/docs/en/install.html)

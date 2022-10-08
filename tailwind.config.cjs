@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [daisyui, typography],
   daisyui: {
-    themes: [{ light: { ...themes['[data-theme=cmyk]'] } }, 'night'],
+    themes: [{ light: { ...themes['[data-theme=winter]'] } }, 'night'],
     darkTheme: 'night',
   },
 };

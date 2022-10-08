@@ -16,7 +16,6 @@
     "vite-plugin-svgr": "^2.2.1"
   },
   "devDependencies": {
-    "@rollup/plugin-image": "^2.1.1",
     "@tailwindcss/typography": "^0.5.7",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
