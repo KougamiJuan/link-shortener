@@ -10,14 +10,14 @@ With link Shortener you can make links shorter and easier to remember. With this
 
 ## Stack
 
-| Technology                               | Version |
-| ---------------------------------------- | ------- |
-| [Vite](https://vitejs.dev/)              | 3.1.0   |
-| [ReactJS](https://reactjs.org/)          | 18.2.0  |
-| [Tailwind CSS](https://tailwindcss.com/) | 3.1.8   |
-| [daisyUI](https://daisyui.com/)          | 2.31.0  |
-| [ESLint](https://eslint.org/)            | 8.23.0  |
-| [Prettier](https://prettier.io/)         | 2.7.1   |
+| Technology                               | Version                                         |
+| ---------------------------------------- | ----------------------------------------------- |
+| [Vite](https://vitejs.dev/)              | ![](https://img.shields.io/badge/-v3.1.0-blue)  |
+| [ReactJS](https://reactjs.org/)          | ![](https://img.shields.io/badge/-v18.2.0-blue) |
+| [Tailwind CSS](https://tailwindcss.com/) | ![](https://img.shields.io/badge/-v3.1.8-blue)  |
+| [daisyUI](https://daisyui.com/)          | ![](https://img.shields.io/badge/-v2.31.0-blue) |
+| [ESLint](https://eslint.org/)            | ![](https://img.shields.io/badge/-v8.23.0-blue) |
+| [Prettier](https://prettier.io/)         | ![](https://img.shields.io/badge/-v2.7.1-blue)  |
 
 ## Available scripts
 
@@ -136,7 +136,6 @@ Add the paths to all of your template files in your `tailwind.config.cjs` file i
 ```javascript
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {},
@@ -184,9 +183,9 @@ module.exports = {
 
 ## Optional configurations
 
-- To handle CSS themes use [CSS Theme Change](https://github.com/saadeghi/theme-change)
+- To handle CSS themes use: [CSS Theme Change](https://github.com/saadeghi/theme-change)
 
-- To transform SVGs into React components in Vite [vite-plugin-svgr](https://github.com/pd4d10/vite-plugin-svgr)
+- To transform SVGs into React components in Vite use: [vite-plugin-svgr](https://github.com/pd4d10/vite-plugin-svgr)
 
 # Documentation of each technology used
 
